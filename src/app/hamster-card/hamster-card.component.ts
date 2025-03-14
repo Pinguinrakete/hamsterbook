@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hamster-card',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './hamster-card.component.scss'
 })
 export class HamsterCardComponent implements OnInit {
+  @Input() text: string = '';
+  @Input() img: string = '';
 
   constructor() { }
   

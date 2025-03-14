@@ -1,5 +1,9 @@
 <app-header></app-header>
 
-<div class="container">
-    <app-hamster-card></app-hamster-card>
+<div class="flexrow">
+    <div class="container">
+        <app-hamster-card *ngFor="let i of [0, 1, 2, 3]" [img]="postImages[i]" [text]="postTexts[i]"></app-hamster-card>
+    </div>
+
+    <app-proposals></app-proposals>
 </div>
