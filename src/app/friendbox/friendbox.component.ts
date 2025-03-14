@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProfileRowComponent } from "../profile-row/profile-row.component";
 
 @Component({
-  selector: 'app-proposals',
+  selector: 'app-friendbox',
   standalone: true,
-  imports: [CommonModule, ProfileRowComponent],
-  templateUrl: './proposals.component.html',
-  styleUrl: './proposals.component.scss'
+  imports: [CommonModule],
+  templateUrl: './friendbox.component.html',
+  styleUrl: './friendbox.component.scss'
 })
-export class ProposalsComponent implements OnInit {
+export class FriendboxComponent implements OnInit {
 
   names = ['Marius','Franziska','Josephine','Patrick'];
   texts = ['2 Jahre alt','Gräbt gerne Löcher','Spielt gerne','Hamsterrad-Freak'];

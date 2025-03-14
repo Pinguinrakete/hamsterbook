@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FriendboxComponent } from "./friendbox/friendbox.component";
 import { HeaderComponent } from './header/header.component';
 import { HamsterCardComponent } from "./hamster-card/hamster-card.component";
 import { ProposalsComponent } from "./proposals/proposals.component";
@@ -7,7 +8,7 @@ import { ProposalsComponent } from "./proposals/proposals.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, HamsterCardComponent, ProposalsComponent],
+  imports: [CommonModule, FriendboxComponent, HeaderComponent, HamsterCardComponent, ProposalsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,10 +1,7 @@
-<div class="profile-row">
-    <img src="../../assets/img/hamster/1.jpg">
+<app-profile-row></app-profile-row>
 
-    <div>
-        <b>Frederick</b><br>
-        <span class="description">3 Jahre alt</span>
-    </div>
+<div class="margin-bottom-16">
+    <b>Freundesvorschläge</b>
 </div>
 
-<b>Freundesvorschläge</b>
+<app-profile-row *ngFor="let i of [0, 1 ,2, 3]" [name]="names[i]" [img]="images[i]" [description]="texts[i]"></app-profile-row>
